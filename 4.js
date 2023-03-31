@@ -11,18 +11,15 @@
 
 function minimumChange(coinArray) {
   coinArray.sort((a, b) => a - b);
-
   let currentChange = 0;
-  for (let coin of coinArray) {
-    if (coin > currentChange + 1) {
-      return currentChange + 1; 
-    }
-    currentChange = currentChange + coin; 
+  let i = 0;
+  while (i < coinArray.length && coinArray[i] <= currentChange + 1) {
+    currentChange = currentChange + coinArray[i];
+    i++;
   }
-  return currentChange + 1; // if all sums can be created, return the next one
+  return currentChange + 1;
 }
 
 const coinArray = [5, 7, 1, 1, 2, 3, 22];
 // const coinArray = [];
-const minimumChangevalue = minimumChange(coinArray);
-console.log(minimumChangevalue);
+console.log(minimumChange(coinArray));
