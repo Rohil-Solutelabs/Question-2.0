@@ -8,6 +8,7 @@
 
 // max Chnage = 41
 
+
 function minimumChange(coinArray) {
   coinArray.sort((a, b) => a - b);
 
@@ -25,7 +26,3 @@ const coinArray = [5, 7, 1, 1, 2, 3, 22];
 // const coinArray = [];
 const minimumChangevalue = minimumChange(coinArray);
 console.log(minimumChangevalue);
-
-
-
-

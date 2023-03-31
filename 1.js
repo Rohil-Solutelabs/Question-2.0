@@ -4,7 +4,6 @@
 // Note that the target sum has to be obtained by summing two different integers in the array; you can’t add a single integer to itself to obtain the target sum.
 // You can assume that there will be at most one pair of numbers summing up to the target sum.
 
-// -------------------------------------------------------------------------------------------------------------------------------
 function findTwoSum(array, targetSum) {
   const numSet = new Set();
 
