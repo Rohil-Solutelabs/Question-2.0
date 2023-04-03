@@ -2,7 +2,7 @@
 function tournamentWinner(competitions, results) {
   const scores = {}; // keep track of each team's score
   let maxScore = 0; // keep track of the maximum score till now
-  let winner = ""; // keep track of the current winner team
+  let winner = ""; 
 
   for (let i = 0; i < competitions.length; i++) {
     const [homeTeam, awayTeam] = competitions[i];
