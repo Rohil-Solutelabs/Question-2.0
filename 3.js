@@ -23,7 +23,9 @@ function tournamentWinner(competitions, results) {
     scores[winningTeam] += 3;
 
     // update the maximum score and the current winner team if necessary
-    if (scores[winningTeam] > maxScore) {
+    if (scores[winningTeam] === maxScore) {
+      winner = "There is a draw between teams!";
+    } else if (scores[winningTeam] > maxScore) {
       maxScore = scores[winningTeam];
       winner = winningTeam;
     }
